@@ -8,3 +8,4 @@ mv /tmp/betty /tmp/my_first_directory/betty
 rm /tmp/my_first_directory/betty
 rm -rf /tmp/my_first_directory
 cd - to change the directory to the previous director.
+ls -la . .. /boot to list long format including hidden files starting from directory, parent of working directory and /boot
