@@ -7,3 +7,4 @@ mkdir /tmp/my_first_directory  to create my_first_directory inside the tmp direc
 mv /tmp/betty /tmp/my_first_directory/betty
 rm /tmp/my_first_directory/betty
 rm -rf /tmp/my_first_directory
+cd - to change the directory to the previous director.
