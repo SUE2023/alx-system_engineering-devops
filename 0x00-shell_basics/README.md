@@ -16,6 +16,6 @@ mv [[:upper:]]* to move files starting with capital to /tmp/u
 rm *~ to delete all files ending with ~
 mkdir -p to make directories per the all names welcome/to/school
 ls -xamp to long list with commas in order of hidden to digital and to letters
-
+I:mime Holberton  to detect school data files
 
 
