@@ -6,3 +6,4 @@ ls -la To display the content of the directory including hidden files (starting 
 mkdir /tmp/my_first_directory  to create my_first_directory inside the tmp directory.
 mv /tmp/betty /tmp/my_first_directory/betty
 rm /tmp/my_first_directory/betty
+rm -rf /tmp/my_first_directory
