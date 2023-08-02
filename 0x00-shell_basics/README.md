@@ -12,3 +12,4 @@ ls -la . .. /boot to list long format including hidden files starting from direc
 file  to display the type of the file.
 ln -s to create symbolic link named __ls__ in the /bin/ls 
 cp -u *.html  to copy new files of .html in parent directory
+mv [[:upper:]]* to move files starting with capital to /tmp/u
