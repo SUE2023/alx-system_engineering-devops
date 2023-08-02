@@ -13,3 +13,5 @@ file  to display the type of the file.
 ln -s to create symbolic link named __ls__ in the /bin/ls 
 cp -u *.html  to copy new files of .html in parent directory
 mv [[:upper:]]* to move files starting with capital to /tmp/u
+rm *~ to delete all files ending with ~
+
