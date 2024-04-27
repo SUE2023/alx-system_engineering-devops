@@ -1,17 +1,7 @@
 INSTRUCTIONS TO 0x0B. SSH PROJECT
 DevOps      SSH       Network      SysAdmin     Security
 https://www.youtube.com/watch?v=qWKK_PNHnnA 
-Ssh public key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCYJJZ+UaqJ3TvJ0yL8yYP42cCIeHE1ZTdFYDp5qyPJQGN93CkAh5M9OWsnzrS9exzUjT1oylOifhti1DOexwDkuBbbklKYMTo5py2P525NhFOAzQZsxQDn8zB/5C4VhDN+wRsD3somvT4xlSyj3/KoThKuwRaeSZefxvZrGzr9B0/IeeCpGNSWIRqk2WAJlVTKXPzJEqYIbb01QbEfl2/pC+8SNooE3lqgWo2YmKRS0WBggJcNmka7csffdbdtDXjiA4sEQq5hVk249kKNhIIXk0zabb9lKc1TluA5FImHElS+GeRaZEOHXUAkPiAFDZFQIJbwBD1RUjpmOIrUC1TJ rsa-key-20240420
 
-
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCbLHHsgkOtNIVCeSpqSnn7R50TSVsWSiMRKt6U8tNQYytzRy+g/HoFEWJLzl19MVoH1Y1sIEZJxVlyGimqCSGNRNn03MOehIv8wzQQ2KeQX/nAtMfXFDBRx4iIIjY2uNZVZQQKxccbub/Ig0eBBrV2dOoJ2xoep5xOo8uS3F/6vgJmTftMoz2UbUXwHhE5NOR79tYO/v0z3JClBcK3c+QPoDd9goScmHxRC/vGbGqCv/pM20ewpek7pe1w+TmE3qpsMlreNI1thFOgJ1AoU/HGBd6WyfHD6MvEuF9mX3v2z0a0YoGI+fKtsrtNyu0TgEhpXdty0ZutwyFx1sXcRPhR rsa-key-20240422
-key fingerprint: ssh-rsa 2048 SHA256:bHjlkV1qQoelBb8xt08Ay3FV4PnNE0aXleK6mVSS/A0
-key comment: rsa-key-20240422
-
-
-SAVED PART OF THE KEY IN alx Profile ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCbLHHsgkOtNIVCeSpqSnn7R50TSVsWSiMRKt6U8tNQYytzRy+g/HoFEWJLzl19MVoH1Y1sIEZJxVlyGimqCSGNRNn03MOehIv8wzQQ2KeQX/nAtMfXFDBRx4iIIjY2uNZVZQQKxccbub/Ig0eBBrV2dOoJ2xoep5xOo8uS3F/6vgJmTftMoz2UbUXwHhE5NOR79tYO/v0z3JClBcK3c+QPoDd9goScmHxRC/vGbGqCv/pM20ewpek7pe1w
-
-Passphrase: Alx2024?websiteGoal
 Background Context
 Along with this project, you have been attributed an Ubuntu server, living in a datacenter far far away. Like level 2 of the application process, you will connect using ssh. But contrary to level 2, you will not connect using a password but an RSA key. We’ve configured your server with the public key you created in the first task of a previous project shared in your intranet profile.
 You can access your server information in the my servers section of the intranet, each line with contains the IP and username you should use to connect via ssh.
