@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# Check Nginx Default Configuration
+grep -q "listen 80 default_server;" /etc/nginx/sites-enabled/default || sed -i '/^server {/,/^listen \[::\]:80 default_server;/ s/^ *listen [[:digit:]]\+ default_server;/        listen 80 default_server;/' /etc/nginx/sites-enabled/default
+
+# Check for Other Web Servers
+sudo netstat -tuln | grep -q ":80" && sudo systemctl stop apache2
+
+# Check Nginx Status
+sudo nginx -t -c /etc/nginx/nginx.conf &> /dev/null || sudo systemctl restart nginx
+
+# Check UFW Firewall
+sudo ufw status | grep -q "80/tcp" && sudo ufw allow 80/tcp
+
