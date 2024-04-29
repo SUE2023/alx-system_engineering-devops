@@ -129,7 +129,7 @@ Score: 0.0% (Checks completed: 0.0%)
 
 Readme:
 
--y on apt-get command
+-y on apt-get command : https://askubuntu.com/questions/672892/what-does-y-mean-in-apt-get-y-install-command 
 Web servers are the piece of software generating and serving HTML pages, let’s install one!
 
 Requirements:
@@ -180,7 +180,7 @@ File: 1-install_nginx_web_server
 2. Setup a domain name
 mandatory
 Score: 0.0% (Checks completed: 0.0%)
-.TECH Domains is one of the top domain providers. They are known for the stability and quality of their DNS hosting solution. We partnered with .TECH Domains so that you can learn about DNS.
+.TECH Domains: https://get.tech/  is one of the top domain providers. They are known for the stability and quality of their DNS hosting solution. We partnered with .TECH Domains so that you can learn about DNS.
 
 YOU can have a free .tech domain for 1 year by following these steps:
 
@@ -248,7 +248,7 @@ mandatory
 Score: 0.0% (Checks completed: 0.0%)
 Readme:
 
-Replace a line with multiple lines with sed
+Replace a line with multiple lines with sed : https://stackoverflow.com/questions/26041088/sed-replace-line-with-multiline-variable 
 Configure your Nginx server so that /redirect_me is redirecting to another page.
 
 Requirements:
