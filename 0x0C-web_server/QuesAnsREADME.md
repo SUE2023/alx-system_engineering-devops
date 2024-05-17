@@ -1,6 +1,8 @@
  INSTUCTIONS FOR 0x0C. Web server PROJECT
 DevOps SysAdmin
 DevOps     SysAdmin
+NB: transfer of file manually : scp <filename> ubuntu@IP:/home/ubuntu
+NB: transfer of file manually using specific specific ssh : scp  -i ~/.ssh/id-rsa<filename> ubuntu@IP:/home/ubuntu
 Background Context
 In this project, some of the tasks will be graded on 2 aspects:
 1.	Is your web-01 server configured according to requirements
