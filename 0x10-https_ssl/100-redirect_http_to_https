@@ -47,5 +47,5 @@ frontend techwe-frontend-https
 
 backend techwe-backend
         balance roundrobin
-        server 450205-web-01 34.207.212.225:80 check
-        server 450205-web-02 54.175.254.141:80 check
+        server 450205-web-01 100.26.10.0:80 check
+        server 450205-web-02 204.236.240.49:80 check
