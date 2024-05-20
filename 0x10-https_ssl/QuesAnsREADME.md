@@ -1,5 +1,12 @@
 0x10. HTTPS SSL
 DevOpsSysAdminSecurity
+How to chech if website/server is accessible at terminal
+curl <server name>.techwe.tech  eg.
+curl web-02.techwe.tech
+curl web-01.techwe.tech
+curl lb-01.techwe.tech
+curl www.techwe.tech
+
 Concepts
 For this project, we expect you to look at these concepts:
 •	DNS (check on the last pages)
