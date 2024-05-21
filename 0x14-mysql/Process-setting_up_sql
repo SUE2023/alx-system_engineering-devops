@@ -1,0 +1,6 @@
+PROCESS OF SETTING UP SQL
+========================
+mysql -u root -p	# to login to mysql, password is the set at installation
+source <upsolute_path>  # where the setting commands were saved this case server /home/ubuntu
+
+

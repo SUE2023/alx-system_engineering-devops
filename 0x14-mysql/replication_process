@@ -1,0 +1,49 @@
+On web01 
+CREATE USER slave@'%' IDENTIFIED BY 'password';
+GRANT REPLICATION SLAVE ON *.* TO slave@'%';
+FLUSH PRIVILEGES;
+SHOW MASTER STATUS;
+
+On web02
+CHANGE MASTER TO MASTER_HOST='10.0.0.156', MASTER_USER='repl', MASTER_PASSWORD='slavepass', MASTER_LOG_FILE='recorded_log_file_name', MASTER_LOG_POS=log_position;
+START SLAVE;
+
+sudo service mysql restart
+
+AS WORKED ON
+===========
+REPLICATION PROCESS
+ On web01  
+CREATE USER slave@'%' IDENTIFIED BY 'password';
+GRANT REPLICATION SLAVE ON *.* TO slave@'%';
+FLUSH PRIVILEGES;
+ SHOW MASTER STATUS;                            N/B at this point check to web-2 from web-01 with steps below.
+exit
+sudo service mysql restart
+
+
+On web02 
+CHANGE MASTER TO MASTER_HOST='10.0.0.156', MASTER_USER='repl', MASTER_PASSWORD='slavepass', MASTER_LOG_FILE='recorded_log_file_name', MASTER_LOG_POS=log_position;
+#On my case: CHANGE MASTER TO MASTER_HOST='100.26.10.0', MASTER_USER='save', MASTER_PASSWORD='password', MASTER_LOG_FILE='mysql-bin.000001', MASTER_LOG_POS=749;
+START SLAVE;
+# after restarting Master-web-01 then show status of web-02 by:
+show slave status\G
+
+CHECKING IF EVERYTHING IS OKAY
+++++++++++++++++++++++++++++
+AT web-01 mysql change database by insertion and confirm if it reflects on web-02
+By:
+USE tyrell_corp
+SHOW TABLES
+;
+N/B only one table available nexus6
+SELECT * FROM nexus6;  	# show the content of the table nexus6  N/B after insertion select to see content and SELECT on  web-02 to check if the content is th esame
+INSERT INTO nexus6 VALUES (8, “Admission No”)
+; 
+
+
+N/B at this pointN/B ABOVE check to web-2 from web-01 with steps below.
+mysql –u slave –h  –p  		# password is the above password for replication
+msql  -u slave 100.26.10.0 password
+
+

@@ -1,0 +1,4 @@
+lINK TO SIGNATURE KEY
+N/B IF  sudo wget -O mysql57 https://raw.githubusercontent.com/nuuxcode/alx-system_engineering-devops/master/scripts/mysql57 && sudo chmod +x mysql57 &&  sudo ./mysql57 DOES NOT WORK
+
+https://dev.mysql.com/doc/refman/5.7/en/checking-gpg-signature.html

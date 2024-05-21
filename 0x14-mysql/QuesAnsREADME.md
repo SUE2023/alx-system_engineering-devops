@@ -21,8 +21,9 @@ NOTE AS YOU PROCEED: At any point in this guide, don’t go to the next step if 
 
 You can also use this guide for more visual and sample outputs :
 
-For a comprehensive Guide Click Here 📄
+For a comprehensive Guide Click Here 📄 : https://docs.google.com/document/d/1btVRofXP75Cj90_xq2x8AmzuMPOKq6D_Dt_SCDD6GrU/edit#heading=h.nu0sqigqw1o9 
 STEPS :
++++++++
 Clean Running MySQL Processes :
 
 Check for any running MYSQL Processes: sudo ps aux | grep mysql
