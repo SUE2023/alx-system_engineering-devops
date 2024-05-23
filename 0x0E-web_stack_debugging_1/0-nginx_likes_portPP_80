@@ -1,0 +1,38 @@
+#!/usr/bin/env bash
+# This script configures Nginx to listen on port 80, resolves conflicts with Apache, and ensures UFW allows traffic on port 80
+
+# Ensure script is run as root
+if [[ $EUID -ne 0 ]]; then
+    echo "This script must be run as root"
+    exit 1
+fi
+
+# Stop Apache if it's running and using port 80
+if lsof -i :80 | grep -q "apache2"; then
+    echo "Stopping Apache service..."
+    systemctl stop apache2
+fi
+
+# Ensure the default Nginx site configuration is correct
+DEFAULT_SITE_CONF="/etc/nginx/sites-enabled/default"
+if ! grep -q "listen 80 default_server;" "$DEFAULT_SITE_CONF"; then
+    echo "Configuring Nginx to listen on port 80..."
+    sed -i '/listen \[::\]:80 default_server;/a listen 80 default_server;' "$DEFAULT_SITE_CONF"
+fi
+
+# Test and restart Nginx
+echo "Testing Nginx configuration..."
+if nginx -t; then
+    echo "Restarting Nginx service..."
+    systemctl restart nginx
+else
+    echo "Nginx configuration test failed. Please check the configuration."
+    exit 1
+fi
+
+# Allow traffic on port 80 through UFW
+echo "Configuring UFW to allow traffic on port 80..."
+ufw allow 80/tcp
+
+echo "Nginx should now be running and listening on port 80."
+
