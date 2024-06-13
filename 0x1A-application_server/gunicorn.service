@@ -1,8 +1,6 @@
 [Unit]
-
-Description = HBNB
-After = network.target
-
+Description=Gunicorn instance to serve HBNB
+After=network.target
 
 [Service]
 PermissionsStartOnly = true
